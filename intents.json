@@ -1,39 +1,124 @@
 {
-    "intents": [
-      {
-        "tag": "greeting",
-        "patterns": ["hi", "hello", "hey", "good morning", "namaste"],
-        "responses": ["Hello! Welcome to MKM Group of Colleges For Girls Help Bot. How can I help you?"]
-      },
-      {
-        "tag": "about_college",
-        "patterns": ["tell me about college", "about MKM", "college info"],
-        "responses": ["MKM Group of Colleges for Girls was established in 1998, in Hodal, Palwal, Haryana. Affiliated to MDU Rohtak and approved by AICTE & NCTE."]
-      },
-      {
-        "tag": "mca_details",
-        "patterns": ["MCA fees", "MCA eligibility", "MCA duration"],
-        "responses": ["MCA is 2 years course. Total fees Rs 2.5 Lakhs. Eligibility Graduation with 50%."]
-      },
-      {
-        "tag": "all_courses",
-        "patterns": ["what courses", "courses offered"],
-        "responses": ["We offer B.Sc, M.Sc, BCA, MCA, BBA, MBA, B.Com, MA, M.Com, B.Ed and Diploma courses."]
-      },
-      {
-        "tag": "location_contact",
-        "patterns": ["college address", "contact number", "email"],
-        "responses": ["Address: Near Bus Stand, Hodal, Palwal - 121106. Phone: 7082925917, Email: mkmhodal@gmail.com"]
-      },
-      {
-        "tag": "bus_facility",
-        "patterns": ["bus facility", "college bus", "transport facility", "bus available"],
-        "responses": ["Yes, bus facility is available for Palwal, Hodal and nearby areas. Contact admin office 7082925917 for routes and fees."]
-      },
-      {
-        "tag": "hostel_facility",
-        "patterns": ["hostel available", "hostel fees"],
-        "responses": ["Yes, hostel facility is available for girls. Fee is around Rs 7000-14000 per year."]
-      }
-    ]
-  }
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["hi", "hello", "hey", "hlo", "hii", "good morning", "namaste", "helo"],
+      "responses": ["Hello! Welcome to MKM Group of Colleges For Girls Help Bot. How can I help you? You can ask about courses, fees, bus, hostel, admission."]
+    },
+    {
+      "tag": "about_college",
+      "patterns": ["about college", "about mkm", "college info", "mkm kya hai", "college kaisa hai"],
+      "responses": ["MKM Group of Colleges for Girls was established in 1998 at Hodal, Palwal. Affiliated to MDU Rohtak and DCRUST Murthal. NAAC accredited college for girls."]
+    },
+    {
+      "tag": "mca_details",
+      "patterns": ["mca", "mca fees", "mca eligibility", "mca duration", "mca course"],
+      "responses": ["MCA is 2 years course (4 semesters). Total fees Rs 2.5 Lakhs. Eligibility: BCA/BSc with 50% + Maths. Duration 2 Years."]
+    },
+    {
+      "tag": "bca_details",
+      "patterns": ["bca", "bca fees", "bca eligibility", "bca course", "bca ki fees"],
+      "responses": ["BCA is 3 years course. Total fees Rs 1.8 Lakhs (60k per year). Eligibility: 12th with 50% + English. Best for IT jobs."]
+    },
+    {
+      "tag": "mba_details",
+      "patterns": ["mba", "mba fees", "Mba fees", "mba course", "mba ki fees"],
+      "responses": ["MBA is 2 years course. Total fees Rs 2 Lakhs. Specialization in HR, Finance, Marketing. Eligibility: Graduation with 50%."]
+    },
+    {
+      "tag": "bba_details",
+      "patterns": ["bba", "bba fees", "bba course", "bba ki fees"],
+      "responses": ["BBA is 3 years course. Total fees Rs 1.5 Lakhs. Eligibility: 12th with 50%. Good for management career."]
+    },
+    {
+      "tag": "bsc_details",
+      "patterns": ["bsc", "b.sc", "b.sc fees", "bsc fees"],
+      "responses": ["B.Sc is 3 years course. We offer Medical & Non-Medical. Fees Rs 90,000 total. Eligibility: 12th with Science."]
+    },
+    {
+      "tag": "msc_details",
+      "patterns": ["msc", "m.sc", "msc fees", "Msc fees"],
+      "responses": ["M.Sc is 2 years course. Available in Physics, Chemistry, Maths, CS. Fees Rs 1.2 Lakhs. Eligibility: Graduation with 50%."]
+    },
+    {
+      "tag": "bcom_details",
+      "patterns": ["bcom", "b.com", "bcom fees", "b.com fees"],
+      "responses": ["B.Com is 3 years course. Total fees Rs 75,000. Eligibility: 12th with Commerce/Arts with 50%."]
+    },
+    {
+      "tag": "mcom_details",
+      "patterns": ["mcom", "m.com", "mcom fees"],
+      "responses": ["M.Com is 2 years course. Total fees Rs 60,000. Eligibility: B.Com with 50%."]
+    },
+    {
+      "tag": "ba_details",
+      "patterns": ["ba", "b.a", "ba fees", "ba course"],
+      "responses": ["BA is 3 years course. Total fees Rs 60,000. Subjects: Hindi, English, History, Political Science, etc. Eligibility: 12th pass."]
+    },
+    {
+      "tag": "ma_details",
+      "patterns": ["ma", "m.a", "ma fees"],
+      "responses": ["MA is 2 years course. Fees Rs 50,000. Available in Hindi, English, History. Eligibility: BA with 50%."]
+    },
+    {
+      "tag": "bed_details",
+      "patterns": ["bed", "b.ed", "bed fees", "b.ed fees"],
+      "responses": ["B.Ed is 2 years course. Total fees Rs 1.2 Lakhs. Eligibility: Graduation with 50%. Compulsory for teaching jobs."]
+    },
+    {
+      "tag": "diploma_details",
+      "patterns": ["diploma", "diploma fees", "diploma courses"],
+      "responses": ["Diploma is 1 year course. We offer DCA, PGDCA, Fashion Designing. Fees Rs 30,000 - 50,000."]
+    },
+    {
+      "tag": "all_courses",
+      "patterns": ["all courses", "what courses", "courses offered", "kaun se course", "course list"],
+      "responses": ["We offer B.Sc, M.Sc, BCA, MCA, BBA, MBA, B.Com, M.Com, BA, MA, B.Ed and Diploma courses."]
+    },
+    {
+      "tag": "admission",
+      "patterns": ["admission", "admission open", "admission process", "how to take admission", "last date"],
+      "responses": ["Admission open for 2025-26. Process: Visit college with 10th, 12th, Graduation docs. Fill form + 5000 registration. Merit based admission. Last date 31 July."]
+    },
+    {
+      "tag": "bus_facility",
+      "patterns": ["bus", "buses", "bus facility", "college bus", "transport", "Bus"],
+      "responses": ["Yes, bus facility is available for Palwal, Hodal, Hathin, Nuh, Ballabgarh and nearby areas. Contact admin office 7082929917 for routes and fees."]
+    },
+    {
+      "tag": "hostel_facility",
+      "patterns": ["hostel", "hostel facility", "hostel fees", "Hostel", "girls hostel"],
+      "responses": ["Yes, Girls hostel available inside campus with full security. Fees Rs 7000-14000 per year + Mess extra. Rooms with fan, bed, almirah."]
+    },
+    {
+      "tag": "scholarship",
+      "patterns": ["scholarship", "scholarship available", "sc scholarship"],
+      "responses": ["Yes, Scholarship for SC/ST/OBC and meritorious students (80% above). Haryana Govt. PMS scholarship applicable."]
+    },
+    {
+      "tag": "placement",
+      "patterns": ["placement", "job", "company", "campus placement"],
+      "responses": ["Placement cell available. Companies like Infosys, Wipro, TCS, HCL, ICICI Bank visit. Average package 2.5 LPA. 70% students placed."]
+    },
+    {
+      "tag": "library",
+      "patterns": ["library", "library facility", "books"],
+      "responses": ["Big Library with 15000+ books, journals, e-books. Open 9AM to 4PM. Free Wi-Fi and computer facility."]
+    },
+    {
+      "tag": "canteen_sports",
+      "patterns": ["canteen", "sports", "ground", "food", "cafeteria"],
+      "responses": ["Canteen with hygienic food available. Sports ground for Volleyball, Badminton, Kho-Kho. Annual sports meet also."]
+    },
+    {
+      "tag": "timing",
+      "patterns": ["timing", "college timing", "time", "kab khulta hai"],
+      "responses": ["College timing 9:00 AM to 3:30 PM, Monday to Saturday. Sunday closed. Office timing 9AM to 4PM."]
+    },
+    {
+      "tag": "location_contact",
+      "patterns": ["address", "location", "contact", "phone", "email", "kaha hai"],
+      "responses": ["Address: Near Bus Stand, Hodal, Palwal - 121106, Haryana. Phone: 7082929917, Email: mkmhodal@gmail.com. Google Map: MKM College Hodal."]
+    }
+  ]
+}
