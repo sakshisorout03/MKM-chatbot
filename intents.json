@@ -1,0 +1,39 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["hi", "hello", "hey", "good morning", "namaste"],
+        "responses": ["Hello! Welcome to MKM Group of Colleges For Girls Help Bot. How can I help you?"]
+      },
+      {
+        "tag": "about_college",
+        "patterns": ["tell me about college", "about MKM", "college info"],
+        "responses": ["MKM Group of Colleges for Girls was established in 1998, in Hodal, Palwal, Haryana. Affiliated to MDU Rohtak and approved by AICTE & NCTE."]
+      },
+      {
+        "tag": "mca_details",
+        "patterns": ["MCA fees", "MCA eligibility", "MCA duration"],
+        "responses": ["MCA is 2 years course. Total fees Rs 2.5 Lakhs. Eligibility Graduation with 50%."]
+      },
+      {
+        "tag": "all_courses",
+        "patterns": ["what courses", "courses offered"],
+        "responses": ["We offer B.Sc, M.Sc, BCA, MCA, BBA, MBA, B.Com, MA, M.Com, B.Ed and Diploma courses."]
+      },
+      {
+        "tag": "location_contact",
+        "patterns": ["college address", "contact number", "email"],
+        "responses": ["Address: Near Bus Stand, Hodal, Palwal - 121106. Phone: 7082925917, Email: mkmhodal@gmail.com"]
+      },
+      {
+        "tag": "bus_facility",
+        "patterns": ["bus facility", "college bus", "transport facility", "bus available"],
+        "responses": ["Yes, bus facility is available for Palwal, Hodal and nearby areas. Contact admin office 7082925917 for routes and fees."]
+      },
+      {
+        "tag": "hostel_facility",
+        "patterns": ["hostel available", "hostel fees"],
+        "responses": ["Yes, hostel facility is available for girls. Fee is around Rs 7000-14000 per year."]
+      }
+    ]
+  }
